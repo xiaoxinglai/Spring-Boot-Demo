@@ -34,9 +34,9 @@ public class DemoApplicationTests {
 
     @Test
     public void homepage() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/readingList"))
+        mockMvc.perform(MockMvcRequestBuilders.get("/readingList/测试"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.view().name("readingListqq"))
+                .andExpect(MockMvcResultMatchers.view().name("readingList"))
                 .andExpect(MockMvcResultMatchers.model().attributeExists("books"))
                 .andExpect(MockMvcResultMatchers.model().attribute("books", Matchers.is(Matchers.empty())));
     }
