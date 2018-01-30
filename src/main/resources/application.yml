@@ -1,0 +1,8 @@
+server:
+ port: 8080
+spring:
+ redis:
+ database: 1
+ host: localhost
+ pool:
+  max-active: 20
