@@ -1,0 +1,10 @@
+ spring:
+      datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        username: bk
+        password: qURfiR2NFG
+        url: jdbc:mysql://daily-mhc-o.mysql.rds.aliyuncs.com:3306/db_bk
+        type: com.alibaba.druid.pool.DruidDataSource
+
+
+
